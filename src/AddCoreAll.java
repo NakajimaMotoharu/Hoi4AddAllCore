@@ -3,8 +3,7 @@ import java.awt.event.KeyEvent;
 
 public class AddCoreAll {
 	// 中核州の最大値、最小値の定義
-	//public static final int MAX = 934, MIN = 1;
-	public static final int MAX = 10, MIN = 1;
+	public static final int MAX = 934, MIN = 1;
 	// 入力に使用するbot
 	private final Robot robot;
 
@@ -22,7 +21,7 @@ public class AddCoreAll {
 	public void run(){
 		// 実行前カウントダウン
 		for (int i = 5; i > 0; i = i - 1){
-			System.out.println(String.format("%d秒後に実行します。", i));
+			System.out.printf("%d秒後に実行します。%n", i);
 			pause(1000);
 		}
 		System.out.println("実行します。");
